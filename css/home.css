@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+/* ho */
+
+/* ho */
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    color: #FFD700;
+}
+body {
+    background: #313131;
+}
+.marquee-w {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 40px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+.marquee {
+    position: fixed;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    min-width: 100%;
+    /* height: 100%; */
+}
+.marquee span {
+    display: inline-block;
+    padding-left:100%;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    /* -webkit-text-stroke: 1px #e8f0eb;
+     */
+    color: rgba(255, 234, 0, 0.885);
+    white-space: nowrap;
+    min-width: 100%;
+    height: 100%;
+    line-height: 20px;
+    font-size: 15px;
+    animation: marquee 20s linear infinite;
+}
+.marquee2 span {
+    animation-delay: 5s;
+}
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+/* football hover */
+.football{
+    transition: 0.7s ease;
+}
+
+.football:hover{
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+    transition: 0.7s ease;
+}
+
+.full-background {
+    /* Center the content */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    /* Take full size */
+    height: 100vh;
+    width: 100%;
+    
+    /* Background */
+    background: url('https://img.freepik.com/premium-photo/3d-rendering-online-gambling_99433-4597.jpg?w=2000')  center ;
+    
+}
+
+/* card slider start */
+html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: rgb(11, 11, 11);
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+       height: 180px;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background:rgb(241, 235, 204);
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+/* card slider end */
+
+/* card image hover */
+.group {
+    position: relative;
+  }
+  
+  .image {
+    background-color: black;
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-60%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: end;
+  }
+  
+  .group:hover .image {
+    opacity: 0.6;
+  }
+  
+  .group:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color:transparent;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: bolder;
+    padding: 16px 32px;
+    transition: 0.5s;
+    border-radius: 60%;
+    cursor: pointer;
+  }
+
+  .text:hover{
+    background: rgb(240, 232, 181);
+    color:black;
+    font-weight: bold;
+  }
+
+
+
+  /* footer sider */
+  :root {
+    --marquee-width: 80vw;
+    --marquee-height: 20vh;
+    /* --marquee-elements: 12; */ /* defined with JavaScript */
+    --marquee-elements-displayed: 8;
+    --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
+    --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
+  }
+  
+  .marquee {
+    width: var(--marquee-width);
+    height: var(--marquee-height);
+    overflow: hidden;
+    position: relative;
+  }
+  .marquee:before, .marquee:after {
+    position: absolute;
+    top: 0;
+    width: 10rem;
+    height: 100%;
+    content: "";
+    z-index: 1;
+  }
+  
+  .marquee-content {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    animation: scrolling var(--marquee-animation-duration) linear infinite;
+  }
+  /* .marquee-content:hover {
+    animation-play-state: paused;
+  } */
+  @keyframes scrolling {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements))); }
+  }
+  .marquee-content li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    flex-shrink: 0;
+    width: var(--marquee-element-width);
+    max-height: 100%;
+    font-size: calc(var(--marquee-height)*3/4); /* 5rem; */
+    white-space: nowrap;
+  }
+  
+  .marquee-content li img {
+    width: 100%;
+    /* height: 100%; */
+  }
+  
+  @media (max-width: 600px) {
+    html { font-size: 12px; }
+    :root {
+      --marquee-width: 100vw;
+      --marquee-height: 16vh;
+      --marquee-elements-displayed: 4;
+    }
+    .marquee:before, .marquee:after { width: 5rem; }
+  }
+
+  /* scroll bar start */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:goldenrod; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: gold; 
+  }
+  /* scroll bar end */
+
+
+/* search btn */
+.search-box{
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+.input-search{
+  height: 50px;
+  width: 50px;
+  border-style: none;
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  transition: all .5s ease-in-out;
+  background-color: transparent;
+  padding-right: 40px;
+  color:goldenrod;
+}
+.input-search::placeholder{
+  color:goldenrod;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+.btn-search{
+  width: 50px;
+  height: 50px;
+  border-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  color:goldenrod ;
+  background-color:transparent;
+  pointer-events: painted;  
+}
+.btn-search:focus ~ .input-search{
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom:1px solid rgba(255,255,255,.5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+.input-search:focus{
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom:1px solid goldenrod;
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
