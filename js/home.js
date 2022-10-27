@@ -27,3 +27,7 @@ for(let i=0; i<marqueeElementsDisplayed; i++) {
 // footer slider
 
 
+// btn active
+
+
+
