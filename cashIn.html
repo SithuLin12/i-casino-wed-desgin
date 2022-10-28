@@ -32,26 +32,59 @@
 
 <body class="bg-image" style="background-image: url('https://img.freepik.com/free-vector/black-golden-casino-cards-with-dice-background_1017-32729.jpg?w=2000');
 height: 100vh">
-   <!-- header start -->
-   <div class="row bg-black">
-    <div class="col-1 d-flex justify-content-end">
-      <img width="25px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFGmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNi4wLWMwMDYgNzkuMTY0NzUzLCAyMDIxLzAyLzE1LTExOjUyOjEzICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgMjIuMyAoTWFjaW50b3NoKSIgeG1wOkNyZWF0ZURhdGU9IjIwMjEtMDctMTJUMjM6MDI6NDIrMDg6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDIxLTA4LTA2VDIzOjA3OjI1KzA4OjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDIxLTA4LTA2VDIzOjA3OjI1KzA4OjAwIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIgcGhvdG9zaG9wOklDQ1Byb2ZpbGU9InNSR0IgSUVDNjE5NjYtMi4xIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOmU4ZDg0M2QyLWZjMzAtNDEyZi05MjE5LTQzZGFiY2ZkNDVkMCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDplOGQ4NDNkMi1mYzMwLTQxMmYtOTIxOS00M2RhYmNmZDQ1ZDAiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDplOGQ4NDNkMi1mYzMwLTQxMmYtOTIxOS00M2RhYmNmZDQ1ZDAiPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOmU4ZDg0M2QyLWZjMzAtNDEyZi05MjE5LTQzZGFiY2ZkNDVkMCIgc3RFdnQ6d2hlbj0iMjAyMS0wNy0xMlQyMzowMjo0MiswODowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIDIyLjMgKE1hY2ludG9zaCkiLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+H3Sg0gAAA7FJREFUaIHV2l2oVFUUB/DfvU2lWPZUoTeySIKkkpAioqhEK6KIAq2kqB6i6ENLiEiCwoLKl8Kk9CFCIowgjD6w+xAK1ZuVifYpGZH0QZEYlaX47+HMtVFm5py5d+Ze539YsM/ea+3932d/rbVnBpLoZwxONIGxorZ1w9yJ5tCI2ViI9dhcxaDWUzrVMRXLcR+Owh2YXsXwSOjAQjzrUMLTqhpPZAdm4gXMH0slE7GIJ+FxbDNG8oz/CFyh+OpndKvC8RqBIbyOYV0kD7UeH2Q1xc6yHMf3qoFe4gNc2MX6Fih2qzXYS+9H4Kwu1vU0Hq6nJ+EZqo/AuXgA52GgRPdBbOycX1s0koffRhJVRmABXsXRFRs7oSNq5XjCoeRX46WRl7JdaDrWqk6+2zgJjza8r8Y9OPjVa0km1ZXm41h8hHvr5bdi8rhQbY7d+BpnYhUWayAPNcmLuL0h7+OG9Dm95VeKfxUe6jTsbKZQC4sOy/ujIX1cj4h1gr1akKcYgWPGkUzX0etzoOeoRV904AIswZSGvH1YW+uTAViF85vkX13THz34VPMOfNYva+BurHTogXoAX/XLGgi2NyuoSfY7MoL7UaGW5A3c2JDXuNL/Gmc+HaOWuBO/+t8XapxnTYdtnHELLsYKfHt44cCHr81pZ3yawpnqxBu9Hm/W07uN3r0ewIn4uZ7ehcuwo1FpUKKNfCe5v0Snl7JH8n09PSTZJJnZqDMYpc+ayLWRLyrodvv5JzIvsqv+PhTZFJkxolH1HHinLqfjVO3Dym2dz5a22KGYOpsU1zNDuAvL6NyZ26mNa9sEBzqpvA1GOjGsiNLeGymo6gtNxqXYgp86aPgSPI/LO7BphR2K+9SawpFD+SIekYckGyQ/StJCFjex2y6ZK7lJ8kMXFnUk+xrzBja+Uho1nqLYStvFxp8rQr/9bXSmKGLvpagSRJVd34DB1h/0oKxIMrlEZ2mS/SU6fyZ5JMnZSYYrtFtJyqbQRZKbS3Telgx3MA2+kVwluU5xzoxpWg2WlK0ssd+XWDrKtt9KzEo8ltg72j60O8hui8wpOWiei+wYw0H1d2R5ZFZkfUP+71VraBWRTcVTJevnFzxZZaFVwE7cgCsVnvG6qoatzoGFOLnEdhn2VG2oIobrUhmtIrItiluxVtvdJ3i5k4Z6hVa70GbJbMm7LcqXSA6MdQfphgwGLeTLcE2YF7Y25K8LH7axG1epcq3yvuKHjUWYobijOWIw0CfXKi3R9/9W+Q/9pizBwF/rVwAAAABJRU5ErkJggg==" alt="">
-    </div>
-     <div class="col-9">
-      <div class="scrolling">
-        <span>Hello good luck to you all. You can find income from this site to invite your friends Hello good luck to you all. You can find income from this site to invite your friends</span>
+     <!-- header start -->
+     <div class="row bg-black" style="height: 40px;">
+        <div class="col-1 d-flex justify-content-end">
+          <img width="25px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFGmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNi4wLWMwMDYgNzkuMTY0NzUzLCAyMDIxLzAyLzE1LTExOjUyOjEzICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgMjIuMyAoTWFjaW50b3NoKSIgeG1wOkNyZWF0ZURhdGU9IjIwMjEtMDctMTJUMjM6MDI6NDIrMDg6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDIxLTA4LTA2VDIzOjA3OjI1KzA4OjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDIxLTA4LTA2VDIzOjA3OjI1KzA4OjAwIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIgcGhvdG9zaG9wOklDQ1Byb2ZpbGU9InNSR0IgSUVDNjE5NjYtMi4xIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOmU4ZDg0M2QyLWZjMzAtNDEyZi05MjE5LTQzZGFiY2ZkNDVkMCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDplOGQ4NDNkMi1mYzMwLTQxMmYtOTIxOS00M2RhYmNmZDQ1ZDAiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDplOGQ4NDNkMi1mYzMwLTQxMmYtOTIxOS00M2RhYmNmZDQ1ZDAiPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOmU4ZDg0M2QyLWZjMzAtNDEyZi05MjE5LTQzZGFiY2ZkNDVkMCIgc3RFdnQ6d2hlbj0iMjAyMS0wNy0xMlQyMzowMjo0MiswODowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIDIyLjMgKE1hY2ludG9zaCkiLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+H3Sg0gAAA7FJREFUaIHV2l2oVFUUB/DfvU2lWPZUoTeySIKkkpAioqhEK6KIAq2kqB6i6ENLiEiCwoLKl8Kk9CFCIowgjD6w+xAK1ZuVifYpGZH0QZEYlaX47+HMtVFm5py5d+Ze539YsM/ea+3932d/rbVnBpLoZwxONIGxorZ1w9yJ5tCI2ViI9dhcxaDWUzrVMRXLcR+Owh2YXsXwSOjAQjzrUMLTqhpPZAdm4gXMH0slE7GIJ+FxbDNG8oz/CFyh+OpndKvC8RqBIbyOYV0kD7UeH2Q1xc6yHMf3qoFe4gNc2MX6Fih2qzXYS+9H4Kwu1vU0Hq6nJ+EZqo/AuXgA52GgRPdBbOycX1s0koffRhJVRmABXsXRFRs7oSNq5XjCoeRX46WRl7JdaDrWqk6+2zgJjza8r8Y9OPjVa0km1ZXm41h8hHvr5bdi8rhQbY7d+BpnYhUWayAPNcmLuL0h7+OG9Dm95VeKfxUe6jTsbKZQC4sOy/ujIX1cj4h1gr1akKcYgWPGkUzX0etzoOeoRV904AIswZSGvH1YW+uTAViF85vkX13THz34VPMOfNYva+BurHTogXoAX/XLGgi2NyuoSfY7MoL7UaGW5A3c2JDXuNL/Gmc+HaOWuBO/+t8XapxnTYdtnHELLsYKfHt44cCHr81pZ3yawpnqxBu9Hm/W07uN3r0ewIn4uZ7ehcuwo1FpUKKNfCe5v0Snl7JH8n09PSTZJJnZqDMYpc+ayLWRLyrodvv5JzIvsqv+PhTZFJkxolH1HHinLqfjVO3Dym2dz5a22KGYOpsU1zNDuAvL6NyZ26mNa9sEBzqpvA1GOjGsiNLeGymo6gtNxqXYgp86aPgSPI/LO7BphR2K+9SawpFD+SIekYckGyQ/StJCFjex2y6ZK7lJ8kMXFnUk+xrzBja+Uho1nqLYStvFxp8rQr/9bXSmKGLvpagSRJVd34DB1h/0oKxIMrlEZ2mS/SU6fyZ5JMnZSYYrtFtJyqbQRZKbS3Telgx3MA2+kVwluU5xzoxpWg2WlK0ssd+XWDrKtt9KzEo8ltg72j60O8hui8wpOWiei+wYw0H1d2R5ZFZkfUP+71VraBWRTcVTJevnFzxZZaFVwE7cgCsVnvG6qoatzoGFOLnEdhn2VG2oIobrUhmtIrItiluxVtvdJ3i5k4Z6hVa70GbJbMm7LcqXSA6MdQfphgwGLeTLcE2YF7Y25K8LH7axG1epcq3yvuKHjUWYobijOWIw0CfXKi3R9/9W+Q/9pizBwF/rVwAAAABJRU5ErkJggg==" alt="">
+        </div>
+         <div class="col-7">
+          <div class="scrolling">
+            <span>Hello good luck to you all. You can find income from this site to invite your friends Hello good luck to you all. You can find income from this site to invite your friends</span>
+          </div>
+         </div>
+          <div class=" col-4 d-flex align-items-center">
+              <div class="" style="color: goldenrod;">
+                  <i class="fa-sharp fa-solid fa-circle-dollar-to-slot"></i>
+                  <span class="border border-warning p-1 rounded-2">
+                      <span>25000.4</span>
+                  <i class="fa-solid fa-arrows-rotate"></i>
+                  </span>
+  
+                  <span class="ms-3 p-1 border border-warning">
+                      <i class="fa-solid fa-gamepad"></i>
+                      <span>330</span>
+                  </span>
+  
+                  <span class="ms-3 p-1 border border-warning">
+                      <i class="fa-solid fa-chart-line"></i>
+                      <span>001</span>
+                  </span>
+  
+                  
+  
+                  <span class="dropdown" style="cursor: pointer;">
+                      <span class="ms-3 p-1  " data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="fa-solid fa-user-tie"></i>
+                      </span>
+  
+                      <ul class="dropdown-menu bg-black" >
+                      <a href="profile.html" class="text-decoration-none"><li style="color: goldenrod;" class=" profileBtn pb-3 ps-3" >Profile</li></a>
+                      <a href="friends.html" class="text-decoration-none"><li style="color: goldenrod;" class=" profileBtn pb-3 ps-3" >Friends</li></a>
+                      <a href="history.html" class="text-decoration-none"><li style="color: goldenrod;" class=" profileBtn pb-3 ps-3" >History</li></a>
+                      <a href="cashIn.html" class="text-decoration-none"><li style="color: goldenrod;" class=" profileBtn pb-3 ps-3" >Cash In</li></a>
+                      <a href="" class="text-decoration-none"><li style="color: goldenrod;" class=" profileBtn pb-3 ps-3" >Cash Out</li></a>
+                      <a href="" class="text-decoration-none"><li style="color: goldenrod;" class=" profileBtn pb-3 ps-3" >Logout</li></a>
+                      </ul>
+                  </span>
+  
+                  <span class="ms-3 p-1  rounded-5">
+                      <i class="fa-solid fa-bell"></i>
+                      
+                  </span>
+              </div>
+          </div>
       </div>
-     </div>
-      <div class=" col-2 d-flex align-items-center">
-          <a href="login.html" class="text-decoration-none pe-3">
-              <span class=" text-warning ">login</span>
-          </a>
-          <a href="register.html" class="text-decoration-none">
-              <span class="text-warning">register</span>
-          </a>
-      </div>
-  </div>
-  <!-- header end -->
+      <!-- header end -->
 
     <!-- nav bar start -->
     <div class="row  d-flex justify-content-center align-items-center border-bottom border-warning">
@@ -108,131 +141,40 @@ height: 100vh">
     </div>
     <!-- nav bar end -->
 
-    <!-- category bar start -->
-    <div class="container-fluid">
-        <div class="d-flex justify-content-start mt-3 ms-3">
-            <div class=" ps-2 " style="width: 100px;">
-                <button class="categoryBtn text-white px-2 py-1 rounded-3 w-100">
-                    <span>ALL</span>
-                </button>
+    <h4 class="text-center text-white" >Cash In</h4>
+    <div class="container mt-3 bg-dark border border-warning rounded-3" style="height: 600px;">
+        <h5 class="d-flex align-items-center p-3" style="color: goldenrod;">Pay</h5>
+        <hr class="text-warning">
+        <div class="row p-3">
+            <div class="col-4 ">
+                <img  src="https://console.mmkslot.com/storage/payment_method_logo/g1034.png" class="rounded-3 w-100" alt="">
             </div>
-            <div class=" ps-2 " style="width: 120px;">
-                <button class="categoryBtn text-white p-1 rounded-3 w-100">
-                    <img src="https://console.mmkslot.com/storage/providers/WBet_Logo_1.png" style="width: 20px;" alt=""> 
-                    <span >WBET</span>
-                </button>
+            
+
+            <div class="col-4 ">
+                <img  src="https://console.mmkslot.com/storage/payment_method_logo/K%20Pay.png" class="rounded-3 w-100" alt="">
             </div>
-            <div class=" ps-2 ">
-                <button class="categoryBtn text-white p-1 rounded-3 w-100">
-                    <img src="https://console.mmkslot.com/storage/providers/IBC_Logo.png" style="width: 20px;" alt="">
-                    <span >GAMINGSOFT IBC</span>
-                </button>
+
+            <div class="col-4 ">
+                <img  src="https://console.mmkslot.com/storage/payment_method_logo/Wave%20Pay.png" class="rounded-3 w-100" alt="">
             </div>
-            <div class=" ps-2 " style="width: 120px;">
+
+            <hr class="text-warning mt-5">
+
+            <h5 class="d-flex align-items-center" style="color: goldenrod;">Banking</h5>
+
+            <div class="row mt-2">
+                <div class="col-4">
+                    <img  src="https://console.mmkslot.com/storage/payment_method_logo/Aya%20Bank.png" class="rounded-3 w-100" alt="">
+                </div>
                 
-                <button class="categoryBtn text-white p-1 rounded-3 w-100">
-                    <img src="https://console.mmkslot.com/storage/providers/sbo-logo.png" style="width: 20px;" alt="">
-                    <span >SBO</span>
-                </button>
-            </div>
-
-            <div class=" ps-2  " style="width:150px;">
-                
-                <button class="categoryBtn text-white p-1 rounded-3 ">
-                    <img src="https://console.mmkslot.com/storage/providers/UG.png" style="width: 20px;" alt="">
-                    <span style="font-size: 10px;">UNITED GAMING</span>
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row offset-4">
-            <div class="search-box" style="width: 350px;">
-                <button class="btn-search"><i class="fas fa-search"></i></button>
-                <input type="text" class="input-search" placeholder="Type to Search...">
-              </div>
-        </div>
-    </div>
-    <!-- category bar end -->
-
-    <!-- card section -->
-    <div class="container-fluid h-100">
-        <div class="row mt-5 pt-3 px-5">
-            <div class="col-2 ms-3 mb-5">
-                <div class="">
-                    <div class="group">
-                        <img class="rounded-3 border border-warning" src="https://console.mmkslot.com/storage/games/72.png" height="160px" style="width: 200px;"  alt="">
-                    <div class="middle">
-                        <div class="text text-center"><i class="fa-solid fa-circle-play fs-5"></i>PLAY</div>
-                      </div>
-                    </div>
-                    <div class="pt-1" style="color: goldenrod;">WBET</div>
-                </div>
-            </div>
-
-            <div class="col-2 ms-3 mb-5">
-                <div class="">
-                    <div class="group">
-                        <img class="rounded-3 border border-warning" src="https://console.mmkslot.com/storage/games/75.png" height="160px" style="width: 200px;"  alt="">
-                    <div class="middle">
-                        <div class="text text-center"><i class="fa-solid fa-circle-play fs-5"></i>PLAY</div>
-                      </div>
-                    </div>
-                    <div class="pt-1" style="color: goldenrod;">IBC SPORTSBOOK</div>
-                </div>
-            </div>
-
-            <div class="col-2 ms-3 mb-5">
-                <div class="">
-                    <div class="group">
-                        <img class="rounded-3 border border-warning" src="https://console.mmkslot.com/storage/games/79.png" height="160px" style="width: 200px;"  alt="">
-                    <div class="middle">
-                        <div class="text text-center"><i class="fa-solid fa-circle-play fs-5"></i>PLAY</div>
-                      </div>
-                    </div>
-                    <div class="pt-1" style="color: goldenrod;">SBO SPORTSBOOK</div>
-                </div>
-            </div>
-
-            <div class="col-2 ms-3 mb-5">
-                <div class="">
-                    <div class="group">
-                        <img class="rounded-3 border border-warning" src="https://console.mmkslot.com/storage/games/94.png" height="160px" style="width: 200px;"  alt="">
-                    <div class="middle">
-                        <div class="text text-center"><i class="fa-solid fa-circle-play fs-5"></i>PLAY</div>
-                      </div>
-                    </div>
-                    <div class="pt-1" style="color: goldenrod;">UNITED GAMING</div>
-                </div>
-            </div>
-
-            <div class="col-2 ms-3 mb-5">
-                <div class="">
-                    <div class="group">
-                        <img class="rounded-3 border border-warning" src="https://console.mmkslot.com/storage/games/94.png" height="160px" style="width: 200px;"  alt="">
-                    <div class="middle">
-                        <div class="text text-center"><i class="fa-solid fa-circle-play fs-5"></i>PLAY</div>
-                      </div>
-                    </div>
-                    <div class="pt-1" style="color: goldenrod;">UNITED GAMING</div>
-                </div>
-            </div>
-
-            <div class="col-2 ms-3 mb-5">
-                <div class="">
-                    <div class="group">
-                        <img class="rounded-3 border border-warning" src="https://console.mmkslot.com/storage/games/94.png" height="160px" style="width: 200px;"  alt="">
-                    <div class="middle">
-                        <div class="text text-center"><i class="fa-solid fa-circle-play fs-5"></i>PLAY</div>
-                      </div>
-                    </div>
-                    <div class="pt-1" style="color: goldenrod;">UNITED GAMING</div>
+    
+                <div class="col-4 ">
+                    <img  src="https://console.mmkslot.com/storage/payment_method_logo/g873.png" class="rounded-3 w-100" alt="">
                 </div>
             </div>
         </div>
     </div>
-    <!-- card section -->
 
     <!-- footer silder start -->
     <div class="marquee " style="height: 70px; margin-top: 50px;" >
@@ -253,7 +195,6 @@ height: 100vh">
       </ul>
     </div>
   <!-- footer silder end -->
-
 
   <!-- footer media start -->
   <div class="container-fluid">
