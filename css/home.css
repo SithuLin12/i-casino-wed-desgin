@@ -395,3 +395,14 @@ html,
   background-color: rgb(105, 106, 89);
   color: rgb(0, 0, 0);
 }
+
+.cash{
+  opacity: 0.8;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.cash:hover{
+  opacity: 1.1;
+  transform: scale(1.1);
+}
