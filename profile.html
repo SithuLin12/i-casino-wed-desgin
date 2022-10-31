@@ -32,6 +32,115 @@
 
 <body class="bg-image" style="background-image: url('https://img.freepik.com/free-vector/black-golden-casino-cards-with-dice-background_1017-32729.jpg?w=2000');
 height: 100vh">
+
+    <!-- change password popup -->
+    <div class="popup" id="popup-1" style="top: 60%;">
+        <div class="overlay"></div>
+        <div class="content rounded-3" style="width: 400px;height: 300px;top: 60%;" >
+            <div class="close-btn" style="cursor: pointer;" onclick="toggleClassChangePassword()">&times;</div>
+            <h4 class="text-center">Change Password</h4>
+            
+            <form action="" class="pt-3">
+                <label for="" class="text-warning">Old Password</label>
+                <input type="password" name="" id="" class="text-white mt-1 form-control bg-black border border-warning">
+
+                <label for="" class="text-warning mt-3">New Password</label>
+                <input type="password" name="" id="" class="text-white mt-1 form-control bg-black border border-warning">
+
+                <button class="btn btn-outline-warning float-end mt-4">Confirm</button>
+            </form>
+        </div>
+    </div>
+    <!-- change password popup -->
+
+    <!-- update to level-2  -->
+    <div class="popup" id="popup-2" style="top: 60%;">
+        <div class="overlay"></div>
+        <div class="content rounded-3" style="width: 400px;height: 220px;top: 60%;" >
+            <div class="close-btn" style="cursor: pointer;" onclick="toggleClassUpdateLevel2()">&times;</div>
+            <h5 class=""></h5>
+            
+            <form action="" class="pt-3">
+                <h5 for="" class="text-warning">Update Your Account To Level-2</h5>
+                <input type="file" name="" id="" class="text-white p-2 mt-1 form-control bg-black border border-warning">
+
+                <button class="btn btn-outline-warning float-end mt-4">Send</button>
+            </form>
+        </div>
+    </div>
+    <!-- update to level-2  -->
+
+    <!-- userName Edit  -->
+    <div class="popup" id="popup-3" style="top: 60%;">
+        <div class="overlay"></div>
+        <div class="content rounded-3" style="width: 400px;height: 220px;top: 60%;" >
+            <div class="close-btn" style="cursor: pointer;" onclick="toggleClassEditusername()">&times;</div>
+            <h5 class="">Edit Your Profile</h5>
+            
+            <form action="" class="pt-3">
+                <label for="">User Name</label>
+                <input type="text" name="" id="" class="text-white p-2 mt-1 form-control bg-black border border-warning">
+
+                <button class="btn btn-outline-warning float-end mt-4">confirm</button>
+            </form>
+        </div>
+    </div>
+    <!-- userName Edit  -->
+
+    <!-- email edit -->
+    <div class="popup" id="popup-4" style="top: 60%;">
+        <div class="overlay"></div>
+        <div class="content rounded-3" style="width: 400px;height: 220px;top: 60%;" >
+            <div class="close-btn" style="cursor: pointer;" onclick="toggleClassEditemail()">&times;</div>
+            <h5 class="">Edit Your Profile</h5>
+            
+            <form action="" class="pt-3">
+                <label for="">Email</label>
+                <input type="text" name="" id="" class="text-white p-2 mt-1 form-control bg-black border border-warning">
+
+                <button class="btn btn-outline-warning float-end mt-4">confirm</button>
+            </form>
+        </div>
+    </div>
+    <!-- email edit -->
+
+
+    <!-- phone edit -->
+    <div class="popup" id="popup-5" style="top: 60%;">
+        <div class="overlay"></div>
+        <div class="content rounded-3" style="width: 400px;height: 220px;top: 60%;" >
+            <div class="close-btn" style="cursor: pointer;" onclick="toggleClassEditphone()">&times;</div>
+            <h5 class="">Edit Your Profile</h5>
+            
+            <form action="" class="pt-3">
+                <label for="">Phone</label>
+                <input type="text" name="" id="" class="text-white p-2 mt-1 form-control bg-black border border-warning">
+
+                <button class="btn btn-outline-warning float-end mt-4">confirm</button>
+            </form>
+        </div>
+    </div>
+    <!-- phone edit -->
+
+    <!-- birthday edit -->
+    <div class="popup" id="popup-6" style="top: 60%;">
+        <div class="overlay"></div>
+        <div class="content rounded-3" style="width: 400px;height: 220px;top: 60%;" >
+            <div class="close-btn" style="cursor: pointer;" onclick="toggleClassEditbirthdate()">&times;</div>
+            <h5 class="">Edit Your Profile</h5>
+            
+            <form action="" class="pt-3">
+                <label for="">Birth date</label>
+                <input type="date" name="" id="" class="text-white p-2 mt-1 form-control bg-black border border-warning">
+
+                <button class="btn btn-outline-warning float-end mt-4">confirm</button>
+            </form>
+        </div>
+    </div>
+    <!-- birthday edit -->
+
+    
+
     <!-- header start -->
     <div class="row bg-black" style="height: 40px;">
         <div class="col-1 d-flex justify-content-end">
@@ -146,7 +255,6 @@ height: 100vh">
             
             <div class="col-6 offset-3 bg-dark border border-warning  rounded-3">
                <div class="row float-end">
-                <a href="" class="text-decoration-none fs-3" style="color: goldenrod;"><i class="fa-solid fa-xmark"></i></a>
                </div>
                 <div class="row p-5">
                     <div class="col-5"> 
@@ -160,28 +268,28 @@ height: 100vh">
                         <div class="text-white-50 text-center">
                             Game Code: cb69f8973aa0
                         </div>
-                        <div class="text-white mt-3 p-2 btn btn-warning d-flex justify-content-center" >
+                        <div onclick="toggleClassUpdateLevel2()" class="text-white  mt-3 p-2 btn btn-warning d-flex justify-content-center" >
                             Upgrade Level
                         </div>
                     </div>
                     <div class="col-6 offset-1" >
                         <div class="mb-4">
-                            <div class="" style="color: goldenrod;"><i class="fa-solid fs-4  fa-user"></i> User Name<i class="fa-solid fa-pen-to-square ms-2"></i></div>
+                            <div class="" style="color: goldenrod;"><i class="fa-solid fs-4  fa-user"></i> User Name<i onclick="toggleClassEditusername()" style="cursor: pointer;" class="fa-solid fa-pen-to-square ms-2"></i></div>
                             <div class="text-white-50"><small>Si Thu LIn</small></div>
                         </div>
 
                         <div class="mb-4">
-                            <div class="" style="color: goldenrod;"><i class="fa-solid fs-4 fa-envelope me-2"></i>Email<i class="fa-solid fa-pen-to-square ms-2"></i></div>
+                            <div class="" style="color: goldenrod;"><i class="fa-solid fs-4 fa-envelope me-2"></i>Email<i onclick="toggleClassEditemail()" style="cursor: pointer;" class="fa-solid fa-pen-to-square ms-2"></i></div>
                             <div class="text-white-50"><small>Si Thu LIn</small></div>
                         </div>
 
                         <div class="mb-4">
-                            <div class="" style="color: goldenrod;"><i class="fa-solid fs-4 fa-square-phone me-2"></i>Phone Number<i class="fa-solid fa-pen-to-square ms-2"></i></div>
+                            <div class="" style="color: goldenrod;"><i class="fa-solid fs-4 fa-square-phone me-2"></i>Phone Number<i onclick="toggleClassEditphone()" style="cursor: pointer;" class="fa-solid fa-pen-to-square ms-2"></i></div>
                             <div class="text-white-50"><small>Si Thu LIn</small></div>
                         </div>
 
                         <div class="mb-4">
-                            <div class="" style="color: goldenrod;"><i class="fa-solid fs-4 fa-cake-candles me-2"></i>Date of birth<i class="fa-solid fa-pen-to-square ms-2"></i></div>
+                            <div class="" style="color: goldenrod;"><i class="fa-solid fs-4 fa-cake-candles me-2"></i>Date of birth<i onclick="toggleClassEditbirthdate()" style="cursor: pointer;" class="fa-solid fa-pen-to-square ms-2"></i></div>
                             <div class="text-white-50"><small>Si Thu LIn</small></div>
                         </div>
 
@@ -191,7 +299,7 @@ height: 100vh">
                         </div>
 
                         <div class="mb-4">
-                            <div class="btn bg-warning text-dark">Change Password</div>
+                            <div onclick="toggleClassChangePassword()" class="btn bg-warning text-dark">Change Password</div>
                         </div>
                     </div>
                 </div>

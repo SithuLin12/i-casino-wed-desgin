@@ -32,6 +32,104 @@
 
 <body class="bg-image" style="background-image: url('https://img.freepik.com/free-vector/black-golden-casino-cards-with-dice-background_1017-32729.jpg?w=2000');
 height: 100vh">
+
+    <!-- popup box -->
+    <div class="popup " id="popup-1">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="close-btn" style="cursor: pointer;" onclick="toggleClass()">&times;</div>
+            <h4>အမြန်ရွေး</h4>
+            <div class="row mt-5">
+                <div class="countDigits col-2 ms-3 justify-content-center rounded-4 bg-black d-flex align-items-center" style="height: 50px;cursor: pointer;">
+                    <span>ကြီး</span>
+                </div>
+
+                <div class="countDigits col-2 ms-3 justify-content-center rounded-4 bg-black d-flex align-items-center" style="height: 50px;cursor: pointer;">
+                    <span>ငယ်</span>
+                </div>
+
+                <div class="countDigits col-2 ms-3 justify-content-center rounded-4 bg-black d-flex align-items-center" style="height: 50px;cursor: pointer;">
+                    <span>စုံ</span>
+                </div>
+
+                <div class="countDigits col-2 ms-3 justify-content-center rounded-4 bg-black d-flex align-items-center" style="height: 50px;cursor: pointer;">
+                    <span>မ</span>
+                </div>
+
+                <div class="countDigits col-2 ms-3 justify-content-center rounded-4 bg-black d-flex align-items-center" style="height: 50px;cursor: pointer;">
+                    <span>စုံစုံ</span>
+                </div>
+            </div>
+
+            <div class="row mt-2">
+                <div class="countDigits col-2 ms-3 justify-content-center rounded-4 bg-black d-flex align-items-center" style="height: 50px;cursor: pointer;">
+                    <span>စုံမ</span>
+                </div>
+
+                <div class="countDigits col-2 ms-3 justify-content-center rounded-4 bg-black d-flex align-items-center" style="height: 50px;cursor: pointer;">
+                    <span>မစုံ</span>
+                </div>
+
+                <div class="countDigits col-2 ms-3 justify-content-center rounded-4 bg-black d-flex align-items-center" style="height: 50px;cursor: pointer;">
+                    <span>မမ</span>
+                </div>
+
+                <div class="countDigits col-2 ms-3 justify-content-center rounded-4 bg-black d-flex align-items-center" style="height: 50px;cursor: pointer;">
+                    <span>အပူး</span>
+                </div>
+
+                <div class="countDigits col-2 ms-3 justify-content-center rounded-4 bg-black d-flex align-items-center" style="height: 50px;cursor: pointer;">
+                    <span>ပါဝါ</span>
+                </div>
+            </div>
+
+            <div class="row mt-2">
+                <div class="countDigits col-2 ms-3 justify-content-center rounded-4 bg-black d-flex align-items-center" style="height: 50px;cursor: pointer;">
+                    <span>နက်ခက်</span>
+                </div>
+
+                <div class="countDigits col-2 ms-3 justify-content-center rounded-4 bg-black d-flex align-items-center" style="height: 50px;cursor: pointer;">
+                    <span>ညီကို</span>
+                </div>
+
+                <div onclick="toggleClass()" class="col-2  ms-3 btn btn-danger position-relative justify-content-center rounded-4 bg-black d-flex align-items-center" style="height: 50px;">
+                    <i class="fa-solid fa-xmark text-danger"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                          99+
+                          <span class="visually-hidden">unread messages</span>
+                        </span>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-12">
+                    <input type="text" name="" style="color: goldenrod;" placeholder="0-9" class="form-control border border-warning bg-black" id="">
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div style="height: 60px;cursor: pointer;" class="countDigits col-5 ms-4 justify-content-center rounded-4 bg-black d-flex align-items-center">
+                    <span>ဘရိတ်</span>
+                </div>
+                <div style="height: 60px;cursor: pointer;" class="countDigits col-5 ms-3 justify-content-center rounded-4 bg-black d-flex align-items-center">
+                    <span>တစ်လုံးပတ်လည်</span>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div style="height: 60px;cursor: pointer;" class="countDigits col-5 ms-4 justify-content-center rounded-4 bg-black d-flex align-items-center">
+                    <span>ထိပ်စည်း</span>
+                </div>
+                <div style="height: 60px;cursor: pointer;" class="countDigits col-5 ms-3 justify-content-center rounded-4 bg-black d-flex align-items-center">
+                    <span>နောက်ပိတ်</span>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+    <!-- popup box -->
+
     <!-- header start -->
     <div class="row bg-black">
         <div class="col-1 d-flex justify-content-end">
@@ -161,7 +259,7 @@ height: 100vh">
 
             <div class="col-5 rounded-2 me-2 bg-black  " >
                 <div class="d-flex justify-content-between p-2 ">
-                    <div class="btn btn-warning">Quick</div>
+                    <div class="btn btn-warning" onclick="toggleClass()">Quick</div>
                     <div class="btn btn-info col-2">R</div>
                     <div class="">
                         <input type="text" class="rounded-4 bg-dark form-control text-warning border border-warning" placeholder="Enter Amount"  name="" id="">

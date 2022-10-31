@@ -32,6 +32,73 @@
 
 <body class="bg-image" style="background-image: url('https://img.freepik.com/free-vector/black-golden-casino-cards-with-dice-background_1017-32729.jpg?w=2000');
 height: 100vh">
+
+    <!-- popup box -->
+    <div class="popup" id="popup-1" >
+        <div class="overlay"></div>
+        <div class="content" style="width: 800px;height: 250px;">
+            <div class="close-btn" style="cursor: pointer;" onclick="toggleClass()">&times;</div>
+            <h4>Quick</h4>
+            <div class="row mt-3">
+
+                <div class="countDigits col-1 ms-2 justify-content-center rounded-4 bg-black d-flex align-items-center" style="height: 50px;cursor: pointer;">
+                    <span>000</span>
+                </div>
+
+                <div class="countDigits col-1 ms-2 justify-content-center rounded-4 bg-black d-flex align-items-center" style="height: 50px;cursor: pointer;">
+                    <span>111</span>
+                </div>
+
+                <div class="countDigits col-1 ms-2 justify-content-center rounded-4 bg-black d-flex align-items-center" style="height: 50px;cursor: pointer;">
+                    <span>222</span>
+                </div>
+
+                <div class="countDigits col-1 ms-2 justify-content-center rounded-4 bg-black d-flex align-items-center" style="height: 50px;cursor: pointer;">
+                    <span>333</span>
+                </div>
+
+                <div class="countDigits col-1 ms-2 justify-content-center rounded-4 bg-black d-flex align-items-center" style="height: 50px;cursor: pointer;">
+                    <span>444</span>
+                </div>
+
+                <div class="countDigits col-1 ms-2 justify-content-center rounded-4 bg-black d-flex align-items-center" style="height: 50px;cursor: pointer;">
+                    <span>555</span>
+                </div>
+
+                <div class="countDigits col-1 ms-2 justify-content-center rounded-4 bg-black d-flex align-items-center" style="height: 50px;cursor: pointer;">
+                    <span>666</span>
+                </div>
+
+                <div class="countDigits col-1 ms-2 justify-content-center rounded-4 bg-black d-flex align-items-center" style="height: 50px;cursor: pointer;">
+                    <span>777</span>
+                </div>
+
+                <div class="countDigits col-1 ms-2 justify-content-center rounded-4 bg-black d-flex align-items-center" style="height: 50px;cursor: pointer;">
+                    <span>888</span>
+                </div>
+
+                <div class="countDigits col-1 ms-2 justify-content-center rounded-4 bg-black d-flex align-items-center" style="height: 50px;cursor: pointer;">
+                    <span>999</span>
+                </div>
+                
+            </div>
+
+            <h4 class="mt-2">Manual Input</h4>
+
+            <div class="row">
+                <div class="col-10">
+                    <input  name="" class="form-control bg-black border border-warning" placeholder="069,420" style="color:goldenrod;height: 50px;" id="">
+                </div>
+                <div class="col-2">
+                    <button class="btn bg-success" style="color: goldenrod;height: 50px;">Select</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- popup box -->
+
     <!-- header start -->
     <div class="row bg-black">
         <div class="col-1 d-flex justify-content-end">
@@ -113,7 +180,7 @@ height: 100vh">
 
             <div class="col-6 ms-3 rounded-2 me-2 bg-black  " >
                 <div class="d-flex justify-content-between align-items-center p-2 ">
-                    <div class="btn btn-warning">Quick</div>
+                    <div class="btn btn-warning" onclick="toggleClass()">Quick</div>
                     <div class="btn btn-info col-2">Round</div>
                     <div class="btn btn-danger col-2"><i class="fa-solid fa-circle-xmark"></i></div>
                     <div class="">
