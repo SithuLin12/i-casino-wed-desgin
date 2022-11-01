@@ -100,6 +100,10 @@ function toggleClassTransfer() {
   document.getElementById("popup-27").classList.toggle('active');
 }
 
+function toggleClassMobiletopup() {
+  document.getElementById("popup-11").classList.toggle('active');
+}
+
 // accountpay active
 
 

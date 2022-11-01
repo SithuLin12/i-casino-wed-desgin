@@ -32,23 +32,90 @@
 
 <body class="bg-image" style="background-image: url('https://img.freepik.com/free-vector/black-golden-casino-cards-with-dice-background_1017-32729.jpg?w=2000');
 height: 100vh">
-    <!-- header start -->
-    <div class="row bg-black">
+    <!-- transfer popup -->
+    <div class="popup" id="popup-27" >
+        <div class="overlay"></div>
+        <div class="content rounded-3" style="width: 400px;height: 280px;">
+            <div class="close-btn" style="cursor: pointer;" onclick="toggleClassTransfer()">&times;</div>
+            <h4 class="text-center">Please Transfer</h4>
+  
+            <div class="row pt-3 ps-2 d-flex align-items-center">
+                <div class="col-5" >
+                    <div style="height: 35px;font-size: 13px;" class="btn bg-warning text-black rounded-pill"><i class="fa-sharp fa-solid fa-circle-dollar-to-slot"></i> Main Balance</div>
+                </div>
+  
+                <div class="col-2">
+                    <i class="fa-solid fa-right-left"></i>
+                </div>
+  
+                <div class="col-5" >
+                    <div style="height: 35px;font-size: 13px;" class="btn bg-warning text-black rounded-pill"><i class="fa-solid fa-gamepad"></i> Game Balance</div>
+                </div>
+            </div>
+  
+            <div class="text-center pt-3">
+                <span class="">Please Enter Amount You Want to Transfer</span>
+            </div>
+            
+            <form action="" class="text-center">
+                <input type="text" name="" id="" class="text-white mt-1 form-control bg-black border border-warning">
+                <button class="btn btn-outline-warning mt-4 rounded-pill">Transfer</button>
+            </form>
+        </div>
+    </div> 
+      <!-- transfer popup -->
+  
+      <!-- header start -->
+      <div class="row bg-black" style="height: 40px;">
         <div class="col-1 d-flex justify-content-end">
           <img width="25px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFGmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNi4wLWMwMDYgNzkuMTY0NzUzLCAyMDIxLzAyLzE1LTExOjUyOjEzICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgMjIuMyAoTWFjaW50b3NoKSIgeG1wOkNyZWF0ZURhdGU9IjIwMjEtMDctMTJUMjM6MDI6NDIrMDg6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDIxLTA4LTA2VDIzOjA3OjI1KzA4OjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDIxLTA4LTA2VDIzOjA3OjI1KzA4OjAwIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIgcGhvdG9zaG9wOklDQ1Byb2ZpbGU9InNSR0IgSUVDNjE5NjYtMi4xIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOmU4ZDg0M2QyLWZjMzAtNDEyZi05MjE5LTQzZGFiY2ZkNDVkMCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDplOGQ4NDNkMi1mYzMwLTQxMmYtOTIxOS00M2RhYmNmZDQ1ZDAiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDplOGQ4NDNkMi1mYzMwLTQxMmYtOTIxOS00M2RhYmNmZDQ1ZDAiPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOmU4ZDg0M2QyLWZjMzAtNDEyZi05MjE5LTQzZGFiY2ZkNDVkMCIgc3RFdnQ6d2hlbj0iMjAyMS0wNy0xMlQyMzowMjo0MiswODowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIDIyLjMgKE1hY2ludG9zaCkiLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+H3Sg0gAAA7FJREFUaIHV2l2oVFUUB/DfvU2lWPZUoTeySIKkkpAioqhEK6KIAq2kqB6i6ENLiEiCwoLKl8Kk9CFCIowgjD6w+xAK1ZuVifYpGZH0QZEYlaX47+HMtVFm5py5d+Ze539YsM/ea+3932d/rbVnBpLoZwxONIGxorZ1w9yJ5tCI2ViI9dhcxaDWUzrVMRXLcR+Owh2YXsXwSOjAQjzrUMLTqhpPZAdm4gXMH0slE7GIJ+FxbDNG8oz/CFyh+OpndKvC8RqBIbyOYV0kD7UeH2Q1xc6yHMf3qoFe4gNc2MX6Fih2qzXYS+9H4Kwu1vU0Hq6nJ+EZqo/AuXgA52GgRPdBbOycX1s0koffRhJVRmABXsXRFRs7oSNq5XjCoeRX46WRl7JdaDrWqk6+2zgJjza8r8Y9OPjVa0km1ZXm41h8hHvr5bdi8rhQbY7d+BpnYhUWayAPNcmLuL0h7+OG9Dm95VeKfxUe6jTsbKZQC4sOy/ujIX1cj4h1gr1akKcYgWPGkUzX0etzoOeoRV904AIswZSGvH1YW+uTAViF85vkX13THz34VPMOfNYva+BurHTogXoAX/XLGgi2NyuoSfY7MoL7UaGW5A3c2JDXuNL/Gmc+HaOWuBO/+t8XapxnTYdtnHELLsYKfHt44cCHr81pZ3yawpnqxBu9Hm/W07uN3r0ewIn4uZ7ehcuwo1FpUKKNfCe5v0Snl7JH8n09PSTZJJnZqDMYpc+ayLWRLyrodvv5JzIvsqv+PhTZFJkxolH1HHinLqfjVO3Dym2dz5a22KGYOpsU1zNDuAvL6NyZ26mNa9sEBzqpvA1GOjGsiNLeGymo6gtNxqXYgp86aPgSPI/LO7BphR2K+9SawpFD+SIekYckGyQ/StJCFjex2y6ZK7lJ8kMXFnUk+xrzBja+Uho1nqLYStvFxp8rQr/9bXSmKGLvpagSRJVd34DB1h/0oKxIMrlEZ2mS/SU6fyZ5JMnZSYYrtFtJyqbQRZKbS3Telgx3MA2+kVwluU5xzoxpWg2WlK0ssd+XWDrKtt9KzEo8ltg72j60O8hui8wpOWiei+wYw0H1d2R5ZFZkfUP+71VraBWRTcVTJevnFzxZZaFVwE7cgCsVnvG6qoatzoGFOLnEdhn2VG2oIobrUhmtIrItiluxVtvdJ3i5k4Z6hVa70GbJbMm7LcqXSA6MdQfphgwGLeTLcE2YF7Y25K8LH7axG1epcq3yvuKHjUWYobijOWIw0CfXKi3R9/9W+Q/9pizBwF/rVwAAAABJRU5ErkJggg==" alt="">
         </div>
-         <div class="col-9">
+         <div class="col-6">
           <div class="scrolling">
-            <span>Hello good luck to you all. You can find income from this site to invite your friends Hello good luck to you all. You can find income from this site to invite your friends</span>
+            <span>Hello good luck to you all. You can find income from this site to invite your friends</span>
           </div>
          </div>
-          <div class=" col-2 d-flex align-items-center">
-              <a href="login.html" class="text-decoration-none pe-3">
-                  <span class=" text-warning ">login</span>
-              </a>
-              <a href="register.html" class="text-decoration-none">
-                  <span class="text-warning">register</span>
-              </a>
+          <div class=" col-5 d-flex  align-items-center">
+              <div class="" style="color: goldenrod;">
+                  <i class="fa-sharp fa-solid fa-circle-dollar-to-slot"></i>
+                  <span class="border border-warning p-1 me-3 rounded-2" style="cursor: pointer;width: 300px;">
+                      <span>1000025000.4</span>
+                  <i class="fa-solid fa-arrows-rotate"></i>
+                  </span>
+  
+                  <i onclick="toggleClassTransfer()" class="me-2 fa-solid fa-money-bill-transfer ms-3" style="cursor: pointer;"></i>
+  
+                  <span class="ms-3 p-1 border border-warning me-2" style="cursor: pointer;">
+                      <i class="fa-solid fa-gamepad"></i>
+                      <span>330</span>
+                  </span>
+  
+                  <span class="ms-3 p-1 border border-warning me-2" style="cursor: pointer;">
+                      <i class="fa-solid fa-chart-line"></i>
+                      <span>001</span>
+                  </span>
+  
+                  <span class="dropdown" style="cursor: pointer;">
+                      <span class="ms-3 p-1  " data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="fa-solid fa-user-tie"></i>
+                      </span>
+  
+                      <ul class="dropdown-menu bg-black" >
+                      <a href="profile.html" class="text-decoration-none"><li style="color: goldenrod;" class=" profileBtn pb-3 ps-3" >Profile</li></a>
+                      <a href="friends.html" class="text-decoration-none"><li style="color: goldenrod;" class=" profileBtn pb-3 ps-3" >Friends</li></a>
+                      <a href="history.html" class="text-decoration-none"><li style="color: goldenrod;" class=" profileBtn pb-3 ps-3" >History</li></a>
+                      <a href="cashIn.html" class="text-decoration-none"><li style="color: goldenrod;" class=" profileBtn pb-3 ps-3" >Cash In</li></a>
+                      <a href="cashout.html" class="text-decoration-none"><li style="color: goldenrod;" class=" profileBtn pb-3 ps-3" >Cash Out</li></a>
+                      <a href="login.html" class="text-decoration-none"><li style="color: goldenrod;" class=" profileBtn pb-3 ps-3" >Logout</li></a>
+                      </ul>
+                  </span>
+  
+                  <span onclick="toggleNotifi()" class="ms-3 p-1  rounded-5" style="cursor: pointer;">
+                      <i class="fa-solid fa-bell"></i>
+                  </span>
+  
+                  
+              </div>
           </div>
       </div>
       <!-- header end -->
